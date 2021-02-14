@@ -8,7 +8,7 @@ class DockerFormSpawner(DockerSpawner):
 		<label for="profile">Select a job profile:</label>
         <select class="form-control" name="profile" required="" autofocus="">
 			<option value="jupyter/minimal-notebook" selected="">minimal</option>
-			<option value="amitfr/notebooks:latest">my notebook</option>
+			<option value="<enter here>">my notebook</option>
 			<option value="custom">Custom Notebook</option>
         </select>
         <span id='custom'>
