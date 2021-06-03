@@ -36,9 +36,9 @@ class DockerFormSpawner(DockerSpawner):
 
     def options_from_form(self, formdata):
         options = {}
-        options['image'] = formdata.get('profile')[0].strip()
-        if options['image'] == 'custom':
-            options['image'] = formdata.get('customimagename')[0].strip()
+        options['cimage'] = formdata.get('profile')[0].strip()
+        if options['cimage'] == 'custom':
+            options['cimage'] = formdata.get('customimagename')[0].strip()
 
         options['cpu'] = formdata.get('cpu', [''])[0].strip()
         options['ram'] = formdata.get('ram', [''])[0].strip()
@@ -47,8 +47,8 @@ class DockerFormSpawner(DockerSpawner):
 
     @property
     def image(self):
-        if self.user_options.get('image'):
-            image = self.user_options['image']
+        if self.user_options.get('cimage'):
+            image = self.user_options['cimage']
         else:
             image = 'jupyter/minimal-notebook'
         return image
@@ -71,3 +71,5 @@ class DockerFormSpawner(DockerSpawner):
 c.JupyterHub.spawner_class = DockerFormSpawner
 c.DockerSpawner.host_ip = "0.0.0.0"
 c.Authenticator.admin_users = { 'admin' }
+c.JupyterHub.hub_ip = "0.0.0.0"
+c.DockerSpawner.network_name = 'jupyterhub'
