@@ -12,7 +12,8 @@ for the fruits of the language are manyfold, and in your hands lay but a taste.
     1. [Zen of Python](https://en.wikipedia.org/wiki/Zen_of_Python)
     2. [Introduction to Python Programming](https://click.linksynergy.com/deeplink?id=vedj0cWlu2Y&mid=39197&u1=ddfreepython2&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpythonforbeginnersintro%2F)
     3. [PEP8](https://realpython.com/python-pep8/)
-    4. [OOP and python](https://realpython.com/inheritance-composition-python/#whats-inheritance)
+    4. [google pyguide](https://google.github.io/styleguide/pyguide.html)
+    5. [OOP and python](https://realpython.com/inheritance-composition-python/#whats-inheritance)
 2. ###### regex
     1. https://www.w3schools.com/python/python_regex.asp
     2. Create regex for Email address (use [this site](https://regex101.com))
